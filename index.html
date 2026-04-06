@@ -211,6 +211,7 @@
                 <a href="#advantages" class="hover:text-rivelin-blue transition">Advantages</a>
                 <a href="#cases" class="hover:text-rivelin-blue transition">Conditions</a>
                 <a href="#process" class="hover:text-rivelin-blue transition">6 Steps</a>
+                <a href="#assessment" class="hover:text-rivelin-blue transition">Assessment</a>
                 <a href="#appointment" class="bg-rivelin-blue text-white px-6 py-2 rounded-full hover:bg-blue-800 transition shadow-lg">Book Appointment</a>
             </div>
             <div class="mobile-menu-btn md:hidden" onclick="document.getElementById('mobileNav').classList.add('open')">
@@ -226,6 +227,7 @@
         <a href="#advantages" onclick="document.getElementById('mobileNav').classList.remove('open')">Advantages</a>
         <a href="#cases" onclick="document.getElementById('mobileNav').classList.remove('open')">Conditions</a>
         <a href="#process" onclick="document.getElementById('mobileNav').classList.remove('open')">6 Steps</a>
+        <a href="#assessment" onclick="document.getElementById('mobileNav').classList.remove('open')">Assessment</a>
         <a href="#appointment" onclick="document.getElementById('mobileNav').classList.remove('open')">Book Appointment</a>
     </div>
 
@@ -491,40 +493,135 @@
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-2xl sm:text-4xl font-extrabold text-rivelin-blue mb-12 sm:mb-20 text-center uppercase reveal">ACHIEVE YOUR BEAUTIFUL SMILE IN 6 SIMPLE STEPS!</h2>
             
-            <div class="relative">
-                <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-1 bg-blue-100 -translate-x-1/2"></div>
+            <!-- Desktop: zigzag timeline | Mobile: clean vertical cards -->
+
+            <!-- Desktop timeline (hidden on mobile) -->
+            <div class="relative hidden lg:block">
+                <div class="absolute left-1/2 top-0 bottom-0 w-1 bg-blue-100 -translate-x-1/2"></div>
                 <div class="space-y-16">
-                    <div class="flex flex-col lg:flex-row items-center reveal">
-                        <div class="lg:w-1/2 text-center lg:text-right lg:pr-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 1: Comprehensive Clinic Examination</h4><p class="text-gray-500 text-sm max-w-sm ml-auto">Visit one of Rivelin's partner Doctor for a thorough oral examination, including facial and intraoral photography, X-rays, and either intraoral scanning or traditional impression making.</p></div>
-                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg">1</div>
-                        <div class="lg:w-1/2 hidden lg:block"></div>
+                    <div class="flex flex-row items-center reveal">
+                        <div class="w-1/2 text-right pr-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 1: Comprehensive Clinic Examination</h4><p class="text-gray-500 text-sm max-w-sm ml-auto">Visit one of Rivelin's partner Doctor for a thorough oral examination, including facial and intraoral photography, X-rays, and either intraoral scanning or traditional impression making.</p></div>
+                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg shrink-0">1</div>
+                        <div class="w-1/2"></div>
                     </div>
-                    <div class="flex flex-col lg:flex-row items-center reveal">
-                        <div class="lg:w-1/2 hidden lg:block"></div>
-                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg">2</div>
-                        <div class="lg:w-1/2 text-center lg:text-left lg:pl-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 2: Tailored Treatment Plan</h4><p class="text-gray-500 text-sm max-w-sm mr-auto">Our expert orthodontist team at Rivelin Center crafts a personalized 3D digital treatment plan based on your tooth models, offering customized orthodontic solutions.</p></div>
+                    <div class="flex flex-row items-center reveal">
+                        <div class="w-1/2"></div>
+                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg shrink-0">2</div>
+                        <div class="w-1/2 text-left pl-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 2: Tailored Treatment Plan</h4><p class="text-gray-500 text-sm max-w-sm mr-auto">Our expert orthodontist team at Rivelin Center crafts a personalized 3D digital treatment plan based on your tooth models, offering customized orthodontic solutions.</p></div>
                     </div>
-                    <div class="flex flex-col lg:flex-row items-center reveal">
-                        <div class="lg:w-1/2 text-center lg:text-right lg:pr-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 3: Approval of 3D Plan</h4><p class="text-gray-500 text-sm max-w-sm ml-auto">Experience your treatment journey come to life as the doctor interprets your plan through 3D animation, allowing you to visualize each movement of your teeth and the final result.</p></div>
-                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg">3</div>
-                        <div class="lg:w-1/2 hidden lg:block"></div>
+                    <div class="flex flex-row items-center reveal">
+                        <div class="w-1/2 text-right pr-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 3: Approval of 3D Plan</h4><p class="text-gray-500 text-sm max-w-sm ml-auto">Experience your treatment journey come to life as the doctor interprets your plan through 3D animation, allowing you to visualize each movement of your teeth and the final result.</p></div>
+                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg shrink-0">3</div>
+                        <div class="w-1/2"></div>
                     </div>
-                    <div class="flex flex-col lg:flex-row items-center reveal">
-                        <div class="lg:w-1/2 hidden lg:block"></div>
-                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg">4</div>
-                        <div class="lg:w-1/2 text-center lg:text-left lg:pl-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 4: Custom Aligner Creation</h4><p class="text-gray-500 text-sm max-w-sm mr-auto">Once your treatment plan is approved, Rivelin utilizes cutting-edge 3D printing technology to fabricate your customized aligners. Wear them as instructed by your doctor.</p></div>
+                    <div class="flex flex-row items-center reveal">
+                        <div class="w-1/2"></div>
+                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg shrink-0">4</div>
+                        <div class="w-1/2 text-left pl-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 4: Custom Aligner Creation</h4><p class="text-gray-500 text-sm max-w-sm mr-auto">Once your treatment plan is approved, Rivelin utilizes cutting-edge 3D printing technology to fabricate your customized aligners. Wear them as instructed by your doctor.</p></div>
                     </div>
-                    <div class="flex flex-col lg:flex-row items-center reveal">
-                        <div class="lg:w-1/2 text-center lg:text-right lg:pr-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 5: Regular Check-ins</h4><p class="text-gray-500 text-sm max-w-sm ml-auto">Stay on track with your treatment progress by scheduling regular check-ups as advised by your doctor. These visits are crucial for achieving the perfect treatment outcome.</p></div>
-                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg">5</div>
-                        <div class="lg:w-1/2 hidden lg:block"></div>
+                    <div class="flex flex-row items-center reveal">
+                        <div class="w-1/2 text-right pr-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 5: Regular Check-ins</h4><p class="text-gray-500 text-sm max-w-sm ml-auto">Stay on track with your treatment progress by scheduling regular check-ups as advised by your doctor. These visits are crucial for achieving the perfect treatment outcome.</p></div>
+                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg shrink-0">5</div>
+                        <div class="w-1/2"></div>
                     </div>
-                    <div class="flex flex-col lg:flex-row items-center reveal">
-                        <div class="lg:w-1/2 hidden lg:block"></div>
-                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg">6</div>
-                        <div class="lg:w-1/2 text-center lg:text-left lg:pl-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 6: Retainers</h4><p class="text-gray-500 text-sm max-w-sm mr-auto">Congratulations on completing your treatment! As per your doctor's advice, we recommend wearing Rivelin retainers to maintain your beautiful smile for years to come.</p></div>
+                    <div class="flex flex-row items-center reveal">
+                        <div class="w-1/2"></div>
+                        <div class="w-12 h-12 rounded-full bg-rivelin-blue text-white flex items-center justify-center font-bold z-10 shadow-lg shrink-0">6</div>
+                        <div class="w-1/2 text-left pl-12"><h4 class="text-xl font-bold text-rivelin-blue">Step 6: Retainers</h4><p class="text-gray-500 text-sm max-w-sm mr-auto">Congratulations on completing your treatment! As per your doctor's advice, we recommend wearing Rivelin retainers to maintain your beautiful smile for years to come.</p></div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Mobile timeline (hidden on desktop) -->
+            <div class="lg:hidden relative pl-10">
+                <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200"></div>
+                <div class="space-y-8">
+                    <div class="relative reveal">
+                        <div class="absolute -left-10 top-0 w-8 h-8 rounded-full bg-rivelin-blue text-white flex items-center justify-center text-sm font-bold shadow-lg">1</div>
+                        <div class="bg-white rounded-2xl p-4 shadow-sm">
+                            <h4 class="text-base font-bold text-rivelin-blue mb-1">Comprehensive Clinic Examination</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Visit one of Rivelin's partner Doctor for a thorough oral examination, including facial and intraoral photography, X-rays, and either intraoral scanning or traditional impression making.</p>
+                        </div>
+                    </div>
+                    <div class="relative reveal">
+                        <div class="absolute -left-10 top-0 w-8 h-8 rounded-full bg-rivelin-blue text-white flex items-center justify-center text-sm font-bold shadow-lg">2</div>
+                        <div class="bg-white rounded-2xl p-4 shadow-sm">
+                            <h4 class="text-base font-bold text-rivelin-blue mb-1">Tailored Treatment Plan</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Our expert orthodontist team at Rivelin Center crafts a personalized 3D digital treatment plan based on your tooth models, offering customized orthodontic solutions.</p>
+                        </div>
+                    </div>
+                    <div class="relative reveal">
+                        <div class="absolute -left-10 top-0 w-8 h-8 rounded-full bg-rivelin-blue text-white flex items-center justify-center text-sm font-bold shadow-lg">3</div>
+                        <div class="bg-white rounded-2xl p-4 shadow-sm">
+                            <h4 class="text-base font-bold text-rivelin-blue mb-1">Approval of 3D Plan</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Experience your treatment journey come to life as the doctor interprets your plan through 3D animation, allowing you to visualize each movement of your teeth and the final result.</p>
+                        </div>
+                    </div>
+                    <div class="relative reveal">
+                        <div class="absolute -left-10 top-0 w-8 h-8 rounded-full bg-rivelin-blue text-white flex items-center justify-center text-sm font-bold shadow-lg">4</div>
+                        <div class="bg-white rounded-2xl p-4 shadow-sm">
+                            <h4 class="text-base font-bold text-rivelin-blue mb-1">Custom Aligner Creation</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Once your treatment plan is approved, Rivelin utilizes cutting-edge 3D printing technology to fabricate your customized aligners. Wear them as instructed by your doctor.</p>
+                        </div>
+                    </div>
+                    <div class="relative reveal">
+                        <div class="absolute -left-10 top-0 w-8 h-8 rounded-full bg-rivelin-blue text-white flex items-center justify-center text-sm font-bold shadow-lg">5</div>
+                        <div class="bg-white rounded-2xl p-4 shadow-sm">
+                            <h4 class="text-base font-bold text-rivelin-blue mb-1">Regular Check-ins</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Stay on track with your treatment progress by scheduling regular check-ups as advised by your doctor. These visits are crucial for achieving the perfect treatment outcome.</p>
+                        </div>
+                    </div>
+                    <div class="relative reveal">
+                        <div class="absolute -left-10 top-0 w-8 h-8 rounded-full bg-rivelin-blue text-white flex items-center justify-center text-sm font-bold shadow-lg">6</div>
+                        <div class="bg-white rounded-2xl p-4 shadow-sm">
+                            <h4 class="text-base font-bold text-rivelin-blue mb-1">Retainers</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Congratulations on completing your treatment! As per your doctor's advice, we recommend wearing Rivelin retainers to maintain your beautiful smile for years to come.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smile Assessment Form -->
+    <section id="assessment" class="py-12 sm:py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-6 reveal">
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-rivelin-blue mb-4 uppercase">Smile Assessment</h2>
+                <p class="text-gray-500 text-sm sm:text-base">Fill in your details and upload 3 photos of your smile so our team can assess your case.</p>
+            </div>
+
+            <!-- Photo reference guide -->
+            <div class="mb-8 reveal">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest text-center mb-4">How to take your photos</p>
+                <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-md mx-auto">
+                    <div class="text-center">
+                        <div class="rounded-2xl overflow-hidden border border-gray-200 aspect-square">
+                            <img src="ref1.jpeg" alt="Right side reference" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-[10px] sm:text-xs font-bold text-gray-500 mt-2 uppercase tracking-wider">Right Side</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="rounded-2xl overflow-hidden border border-gray-200 aspect-square">
+                            <img src="ref2.jpeg" alt="Front view reference" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-[10px] sm:text-xs font-bold text-gray-500 mt-2 uppercase tracking-wider">Front</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="rounded-2xl overflow-hidden border border-gray-200 aspect-square">
+                            <img src="ref3.jpeg" alt="Left side reference" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-[10px] sm:text-xs font-bold text-gray-500 mt-2 uppercase tracking-wider">Left Side</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Form Link -->
+            <div class="reveal text-center">
+                <a href="https://forms.gle/VaEvg5CgNxDMce346" target="_blank" class="inline-flex items-center gap-3 gradient-blue text-white font-black text-lg px-10 py-5 rounded-2xl shadow-xl hover:shadow-2xl transition-all">
+                    <i class="fas fa-file-alt text-2xl"></i> FILL OUT SMILE ASSESSMENT FORM
+                </a>
+                <p class="text-center text-[10px] text-gray-400 mt-4 uppercase tracking-tighter italic font-bold">Opens a secure Google Form to submit your details and smile photos.</p>
             </div>
         </div>
     </section>
@@ -672,9 +769,10 @@
             const date = document.getElementById('date').value;
             const time = document.getElementById('time').value;
             const message = `*NEW GOOGLE MEET APPOINTMENT*%0A%0A*Name:* ${name}%0A*Date:* ${date}%0A*Time:* ${time}%0A%0A_Please send me the Google Meet link to confirm our consultation for Rivelin Aligners._`;
-            const phone = "1234567890"; 
+            const phone = "1234567890";
             window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
         });
+
     </script>
 </body>
 </html>
