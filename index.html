@@ -41,9 +41,19 @@
             position: relative;
             width: 100%;
             overflow: hidden;
+            -webkit-user-select: none;
             user-select: none;
-            aspect-ratio: 16 / 9;
+            touch-action: none;
+            height: 0;
+            padding-bottom: 56.25%;
             border-radius: 1rem;
+        }
+        @supports (aspect-ratio: 16 / 9) {
+            .slider-container {
+                aspect-ratio: 16 / 9;
+                height: auto;
+                padding-bottom: 0;
+            }
         }
         .slider-container::after {
             content: '';
@@ -83,6 +93,7 @@
             inset: 0;
             width: 4px;
             background: rgba(255,255,255,0.5);
+            -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
         }
         .slider-handle {
@@ -98,6 +109,7 @@
             background: rgba(255,255,255,0.6);
             color: #0074BE;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -158,6 +170,7 @@
                 right: 0;
                 bottom: 0;
                 background: rgba(255,255,255,0.98);
+                -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
                 z-index: 100;
                 flex-direction: column;
@@ -203,6 +216,13 @@
             /* Tighter card padding on mobile */
             .slider-card-mobile {
                 padding: 1rem;
+            }
+
+            /* Prevent iOS auto-zoom on input focus */
+            input[type="text"],
+            input[type="date"],
+            select {
+                font-size: 16px;
             }
         }
     </style>
@@ -633,7 +653,7 @@
                         </div>
                         <p class="text-[10px] sm:text-xs font-bold text-gray-500 mt-2 uppercase tracking-wider">Upper Teeth</p>
                     </div>
-                    <div class="text-center sm:col-span-1" style="margin: auto;">
+                    <div class="text-center col-span-2 sm:col-span-1" style="max-width: 50%; margin: 0 auto;">
                         <div class="rounded-2xl overflow-hidden border border-gray-200 aspect-square">
                             <img src="lowerteeth.png" alt="Lower teeth reference" class="w-full h-full object-cover">
                         </div>
@@ -753,7 +773,7 @@
             }
 
             function onMouseMove(e) { if (isDragging) handleMove(e.clientX); }
-            function onTouchMove(e) { if (isDragging) handleMove(e.touches[0].clientX); }
+            function onTouchMove(e) { if (isDragging) { e.preventDefault(); handleMove(e.touches[0].clientX); } }
 
             function onEnd() {
                 isDragging = false;
@@ -777,14 +797,13 @@
             });
 
             container.addEventListener('touchstart', function(e) {
+                e.preventDefault();
                 isDragging = true;
                 handle.classList.add('dragging');
-                document.addEventListener('mousemove', onMouseMove);
-                document.addEventListener('touchmove', onTouchMove);
-                document.addEventListener('mouseup', onEnd);
+                document.addEventListener('touchmove', onTouchMove, { passive: false });
                 document.addEventListener('touchend', onEnd);
                 handleMove(e.touches[0].clientX);
-            });
+            }, { passive: false });
 
             updatePosition(position);
         });
